@@ -1,0 +1,6 @@
+client_id,client_name,phone_last4,district,agent_license,assets_cash,loan_amount,cpf_available,cpf_accrued_return,ownership_type,desired_price,property_type,rooms,tenure,is_active,monthly_income,monthly_debt,qualified_loan_amount,affordability_status, sqft,Unnamed: 20,postal_code
+A_1000,A,1000,D01 - CCR (Boat Quay/Marina),,10000.0,1000000.0,10000.0,300000.0,,0.0,,1,Freehold,True,10000.0,10000.0,-942575.58,Shortfall,,,
+clientD_1004,clientD,1004,D07 - CCR (Bugis/Beach Road),,0.0,0.0,0.0,0.0,,1000000.0,,1,Freehold,True,0.0,0.0,0.0,,,,
+_1000,,1000,D01 - CCR (Boat Quay/Marina),,0.0,0.0,0.0,0.0,,0.0,,1,Freehold,True,0.0,0.0,0.0,,,,541266.0
+C_1002,C,1002,D06 - CCR (City Hall/Clarke Quay),,0.0,,0.0,,,2080000.0,,4,99-year Leasehold,True,0.0,0.0,,,,,
+B_1001,B,1001,D01 - CCR (Boat Quay/Marina),,0.0,,0.0,,,2000000.0,,2,Freehold,True,0.0,0.0,,,,,5412222

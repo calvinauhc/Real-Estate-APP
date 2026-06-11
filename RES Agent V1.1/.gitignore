@@ -1,0 +1,10 @@
+# Ignore environment variables
+.env
+
+# Ignore virtual environments
+real_estate_env/
+__pycache__/
+*.pyc
+
+# Ignore data files if they are large or private
+data/*.csv

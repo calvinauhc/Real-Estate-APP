@@ -1,0 +1,4 @@
+client_id,client_name,phone_last4,district,agent_license,assets_cash,loan_amount,cpf_available,cpf_accrued_return,ownership_type,desired_price,property_type,rooms,tenure,is_active,monthly_income,monthly_debt,qualified_loan_amount,affordability_status,postal_code
+A_1000,BC,1002,D01 - CCR (Boat Quay/Marina),,10000.0,,10000.0,,,420000.0,,4,99-year Leasehold,True,10000.0,10000.0,,,5222000
+do_1003,do,1003,D07 - CCR (Bugis/Beach Road),,0.0,,0.0,,,0.0,,3,99-year Leasehold,True,0.0,0.0,,,544444
+abc_1002,abc,1002,D01 - CCR (Boat Quay/Marina),,0.0,,0.0,,,2000000.0,,6,99-year Leasehold,True,0.0,0.0,,,566121*

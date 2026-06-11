@@ -1,0 +1,22 @@
+{
+  "hdb_eligibility_matrix": {
+    "version": "2026.06",
+    "constraints": {
+      "mop_duration_years": 5,
+      "eip_quotas": {
+        "chinese": "max_percentage",
+        "malay": "max_percentage",
+        "indian_other": "max_percentage"
+      },
+      "spr_quotas": {
+        "block_limit": 10,
+        "neighborhood_limit": 8
+      }
+    },
+    "eligibility_flags": {
+      "citizenship_types": ["SC", "SPR"],
+      "family_nucleus_required": true,
+      "grant_eligibility_keys": ["PHG", "FAMILY_GRANT", "AHG"]
+    }
+  }
+}

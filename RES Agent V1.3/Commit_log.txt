@@ -1,0 +1,19 @@
+Project Status & Roadmap - Dtd 11 Jun 2026
+1. Core Infrastructure & Features Established
+
+Tab 1 (Client Management):
+Built a robust "Read-Modify-Write" system for client profiles (Name, Phone, District, Property preferences, Tenure).
+Standardized storage via dim_client.csv using absolute paths to ensure data integrity and fix file-system drift.
+Implemented intelligent is_editing logic to handle both "Create New" and "Update Existing" records seamlessly.
+Added auto-refresh functionality (st.rerun()) for immediate UI synchronization.
+
+Tab 2 (Affordability Qualifier):
+Engine created to map client data against 3 primary financial scenarios to assess buying power.
+
+2. Pending Next Steps (To-Do List)
+Market Valuation Engine: Integrate a feature that uses the client’s postal_code to retrieve and calculate estimated market valuations.
+Hybrid Valuation Mode: Implement a manual override for cases where postal code data is unavailable, including a disclaimer that the figure is not market-validated.
+Data Guardrails: Add input validation (e.g., ensuring 6-digit postal codes and 8-digit phone numbers) before allowing a save.
+Operational Efficiency: Add a "Last Updated" timestamp to client records and a search/sort filter for the client list.
+Reporting: Create a function to export the Affordability and Valuation summary into a professional, shareable format (e.g., Copy to Clipboard/PDF).
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~- Dtd 11 Jun 2026

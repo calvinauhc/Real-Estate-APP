@@ -1,0 +1,7 @@
+<!-- Summary Strategy: What should you choose to keep the CSV? -->
+Since you are currently building out your real estate app locally in VSCode, here is the best tactical roadmap:
+
+Short Term (Right Now): Use DuckDB. Instead of struggling with BigQuery credentials or setting up a Postgres server on your Mac, use DuckDB. It allows you to write clean SQL directly over your processed_data.csv right inside your Streamlit app. It will make your local development extremely fast and lightweight.
+
+Long Term (Going to Production): Use Postgres + PostGIS.
+When you are ready to launch your application live as a fully functional real estate portal with maps, user dashboards, and dynamic tracking, spin up a hosted Postgres database (on a service like Supabase, Neon, or AWS). It will give your app rock-solid stability and elite mapping capabilities.

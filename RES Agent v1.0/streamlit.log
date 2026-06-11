@@ -1,0 +1,576 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.50.65:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+2026-05-25 15:18:32.363 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:19:00.955 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:19:07.931 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:19:12.044 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:23:59.709 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:23:59.711 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:44:39.143 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:44:39.145 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:44:39.145 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:44:41.727 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:44:41.730 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:44:41.732 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:44:41.827 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 331, in <module>
+    prim, nxt = spatial_engine.generate_tiered_recommendations(selected_districts, target_property_type, p_low, p_high, search_query)
+AttributeError: module 'spatial_engine' has no attribute 'generate_tiered_recommendations'
+2026-05-25 15:45:06.170 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 331, in <module>
+    prim, nxt = spatial_engine.generate_tiered_recommendations(selected_districts, target_property_type, p_low, p_high, search_query)
+AttributeError: module 'spatial_engine' has no attribute 'generate_tiered_recommendations'
+2026-05-25 15:45:07.727 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 331, in <module>
+    prim, nxt = spatial_engine.generate_tiered_recommendations(selected_districts, target_property_type, p_low, p_high, search_query)
+AttributeError: module 'spatial_engine' has no attribute 'generate_tiered_recommendations'
+2026-05-25 15:50:23.507 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:23.510 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:23.511 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:26.919 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:26.921 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:26.923 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:27.014 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:27.014 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:27.016 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:27.017 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:27.018 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:36.609 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:36.610 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:36.611 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:39.880 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:39.882 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:39.884 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:39.980 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:39.981 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:39.982 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:39.983 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:50:39.984 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:53:35.188 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:53:35.190 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:53:35.193 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:53:35.195 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 15:53:35.195 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-05-25 16:00:19.188 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 431
+    else:
+    ^
+SyntaxError: invalid syntax
+2026-05-25 16:00:19.195 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 16:00:22.937 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 431
+    else:
+    ^
+SyntaxError: invalid syntax
+2026-05-25 16:00:22.938 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 16:01:52.150 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 431
+    else:
+    ^
+SyntaxError: invalid syntax
+2026-05-25 16:01:52.151 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 16:01:55.107 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 431
+    else:
+    ^
+SyntaxError: invalid syntax
+2026-05-25 16:01:55.108 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 16:01:58.914 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 431
+    else:
+    ^
+SyntaxError: invalid syntax
+2026-05-25 16:01:58.914 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 16:05:14.988 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 431
+    else:
+    ^
+SyntaxError: invalid syntax
+2026-05-25 16:05:14.991 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 16:11:27.994 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 431
+    else:
+    ^
+SyntaxError: invalid syntax
+2026-05-25 16:11:27.994 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 16:18:35.315 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 120
+    with tab1:
+IndentationError: unexpected indent
+2026-05-25 16:18:35.315 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 16:25:35.670 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 267
+    gross_cash_profit = current_property_value - outstanding_loan - total_accrued_cpf_to_return - agent_fee_selling - legal_fee_selling - resale_levy_amt
+                                                                                                                                                         ^
+IndentationError: unindent does not match any outer indentation level
+2026-05-25 16:25:35.671 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 16:54:15.935 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 291, in <module>
+    p_low, effective_absd_rate, effective_ltv_cap, legal_fee_buying, total_fluid_reserves_pool
+NameError: name 'effective_absd_rate' is not defined
+2026-05-25 16:55:29.073 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 291, in <module>
+    p_low, effective_absd_rate, effective_ltv_cap, legal_fee_buying, total_fluid_reserves_pool
+NameError: name 'effective_absd_rate' is not defined
+2026-05-25 16:59:14.742 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 293, in <module>
+    p_low, effective_absd_rate, effective_ltv_cap, legal_fee_buying, total_fluid_reserves_pool
+NameError: name 'effective_absd_rate' is not defined
+2026-05-25 21:00:26.697 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 304, in <module>
+    p_low, effective_absd_rate, effective_ltv_cap, legal_fee_buying, total_fluid_reserves_pool
+NameError: name 'effective_absd_rate' is not defined
+2026-05-25 21:25:55.589 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 291, in <module>
+    p_low, effective_absd_rate, effective_ltv_cap, legal_fee_buying, total_fluid_reserves_pool
+NameError: name 'p_low' is not defined
+2026-05-25 21:26:07.265 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 293, in <module>
+    p_low, effective_absd_rate, effective_ltv_cap, legal_fee_buying, total_fluid_reserves_pool
+NameError: name 'p_low' is not defined
+2026-05-25 21:26:14.283 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 278, in <module>
+    p_low, effective_absd_rate, effective_ltv_cap, legal_fee_buying, total_fluid_reserves_pool
+NameError: name 'effective_absd_rate' is not defined
+2026-05-25 21:36:34.041 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 251
+    else: 
+    ^
+IndentationError: expected an indented block
+2026-05-25 21:36:34.042 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 21:36:37.720 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 251
+    else: 
+    ^
+IndentationError: expected an indented block
+2026-05-25 21:36:37.720 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 21:38:19.958 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 291, in <module>
+    "Scenario 1 (Lowest Range Bounds)": [fmt_sgd(p_low), fmt_sgd(bsd_l), fmt_sgd(absd_l), fmt_sgd(cash_l), fmt_sgd(req_l), fmt_sgd(total_fluid_reserves_pool - req_l), status_l],
+NameError: name 'cash_l' is not defined
+2026-05-25 21:50:45.498 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 79, in <module>
+    if view_mode == "Admin Dashboard Backend":
+NameError: name 'view_mode' is not defined
+2026-05-25 21:58:58.348 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 88, in <module>
+    if view_mode == "Admin Dashboard Backend":
+NameError: name 'view_mode' is not defined
+2026-05-25 22:04:11.497 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 87, in <module>
+    if view_mode == "Admin Dashboard Backend":
+NameError: name 'view_mode' is not defined
+2026-05-25 22:09:23.921 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 77
+    view_mode = st.radio("Go To Workspace:", ["Client Presentation Dashboard"])
+IndentationError: unexpected indent
+2026-05-25 22:09:23.922 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 22:09:55.305 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 77
+    view_mode = st.radio("Go To Workspace:", ["Client Presentation Dashboard"])
+IndentationError: unexpected indent
+2026-05-25 22:09:55.305 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-05-25 22:14:02.671 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 124, in <module>
+    if view_mode == "Admin Dashboard Backend":
+NameError: name 'view_mode' is not defined
+2026-05-25 22:31:25.938 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 126, in <module>
+    if view_mode == "Admin Dashboard Backend":
+NameError: name 'view_mode' is not defined
+2026-05-25 22:32:43.125 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 153, in <module>
+    elif view_mode == "Client Presentation Dashboard" and st.session_state["logged_in"]:
+NameError: name 'view_mode' is not defined
+2026-05-25 22:32:44.895 Uncaught app execution
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 669, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 153, in <module>
+    elif view_mode == "Client Presentation Dashboard" and st.session_state["logged_in"]:
+NameError: name 'view_mode' is not defined
+2026-05-25 22:34:47.506 Script compilation error
+Traceback (most recent call last):
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 571, in _run_script
+    code = self._script_cache.get_bytecode(script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_cache.py", line 72, in get_bytecode
+    filebody = magic.add_magic(filebody, script_path)
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/magic.py", line 45, in add_magic
+    tree = ast.parse(code, script_path, "exec")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "/Users/chuafamily/RES app dev/Real-Estate-APP/app.py", line 129
+    elif view_mode == "Client Presentation Dashboard" and st.session_state["logged_in"]:
+    ^
+IndentationError: expected an indented block
+2026-05-25 22:34:47.507 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+  Stopping...

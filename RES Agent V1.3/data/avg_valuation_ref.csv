@@ -1,0 +1,38 @@
+import pandas as pd
+import os
+
+def process_raw_data():
+    raw_path = "data/raw"
+    
+    # 1. Process HDB Data (Standardize to PSF)
+    # 1 SQM = 10.7639 SQFT
+    hdb_file = os.path.join(raw_path, "resale_prices.csv")
+    hdb_df = pd.read_csv(hdb_file)
+    hdb_df['price_psf'] = hdb_df['resale_price'] / (hdb_df['floor_area_sqm'] * 10.7639)
+    hdb_df['location'] = hdb_df['town']
+    hdb_df['category'] = 'HDB'
+    
+    # 2. Process URA Private Data
+    ura_file = os.path.join(raw_path, "URA_apartment_condo.csv")
+    ura_df = pd.read_csv(ura_file)
+    
+    # Clean the column: Remove commas and convert to float
+    ura_df['price_psf'] = pd.to_numeric(ura_df['Unit Price ($ PSF)'].replace(',', '', regex=True))
+    ura_df['location'] = ura_df['Postal District']
+    ura_df['category'] = 'Private'
+
+    # 3. Consolidate
+    combined = pd.concat([
+        hdb_df[['location', 'category', 'price_psf']], 
+        ura_df[['location', 'category', 'price_psf']]
+    ])
+    
+    # 4. Generate the "Brain" (Median PSF per location and category)
+    summary = combined.groupby(['location', 'category'])['price_psf'].median().reset_index()
+    
+    # Save to the reference folder
+    summary.to_csv("data/avg_valuation_ref.csv", index=False)
+    print("Valuation reference updated successfully.")
+
+if __name__ == "__main__":
+    process_raw_data()
