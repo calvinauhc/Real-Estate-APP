@@ -1,11 +1,21 @@
 def calculate_bsd(price):
-    return price * 0.03
+    """Calculates tiered BSD based on current Singapore rates."""
+    if price <= 180000:
+        return price * 0.01
+    elif price <= 360000:
+        return (180000 * 0.01) + ((price - 180000) * 0.02)
+    elif price <= 1000000:
+        return (180000 * 0.01) + (180000 * 0.02) + ((price - 360000) * 0.03)
+    else:
+        # Tiered calculation for amounts above $1M
+        return (180000 * 0.01) + (180000 * 0.02) + (640000 * 0.03) + ((price - 1000000) * 0.04)
 
 def calculate_scenarios(base_price, agent_fee_rate=0.01):
+    """Calculates cost scenarios including stamp duties and agent fees."""
     scenarios = [
-        {"name": "Scenario 1 (Conservative)", "price": base_price - 500000},
-        {"name": "Scenario 2 (Baseline)", "price": base_price},
-        {"name": "Scenario 3 (Aggressive)", "price": base_price + 500000}
+        {"name": "Conservative (-$500k)", "price": base_price - 500000},
+        {"name": "Baseline (Target)", "price": base_price},
+        {"name": "Aggressive (+$500k)", "price": base_price + 500000}
     ]
     results = []
     for s in scenarios:
@@ -15,9 +25,9 @@ def calculate_scenarios(base_price, agent_fee_rate=0.01):
         total_outlay = price + bsd + agent_fee
         results.append({
             "Scenario": s["name"],
-            "Price": f"${price:,.0f}",
-            "BSD": f"${bsd:,.0f}",
-            "Agent Fee": f"${agent_fee:,.0f}",
-            "Total Outlay": f"${total_outlay:,.0f}"
+            "Price": price,
+            "BSD": bsd,
+            "Agent Fee": agent_fee,
+            "Total Outlay": total_outlay
         })
     return results

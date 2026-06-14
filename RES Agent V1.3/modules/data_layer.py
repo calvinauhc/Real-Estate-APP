@@ -1,85 +1,93 @@
 import pandas as pd
 import os
+import numpy as np
+import json
 
-# Ensure the folder structure exists
-DATA_DIR = "data/crm"
-DATA_PATH = os.path.join(DATA_DIR, "dim_clients.csv")
-
-def init_db():
-    if not os.path.exists(DATA_DIR):
-        os.makedirs(DATA_DIR)
-    
-    if not os.path.exists(DATA_PATH):
-        # Update this list to include all your new tracking fields
-        columns = [
-            "client_id", "client_name", "phone_last4", "district", "agent_license", 
-            "assets_cash", "loan_amount", "cpf_available", "cpf_accrued_return", 
-            "ownership_type", "desired_price", "property_type", "rooms", "tenure", "is_active",
-            "monthly_income", "monthly_debt", "qualified_loan_amount", "affordability_status"
-        ]
-        df = pd.DataFrame(columns=columns)
-        df['affordability_status'] = df['affordability_status'].astype(str) # Set explicitly
-        df['affordability_status'] = "" # Fill with empty string
-        df.to_csv(DATA_PATH, index=False)
-
-# This points to the folder where data_layer.py is, then looks for 'data/dim_client.csv'
+# --- CONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Navigate up from 'modules/' to the root, then into 'data/'
 DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '..', 'data', 'dim_client.csv'))
 
-def load_clients():
-    if not os.path.exists(DATA_PATH):
-        return pd.DataFrame() # Return empty if file missing
-    return pd.read_csv(DATA_PATH)
+def safe_int(value, default=0):
+    """Safely converts a value to an integer."""
+    if value is None or (isinstance(value, float) and np.isnan(value)):
+        return default
+    try:
+        return int(float(value))
+    except (ValueError, TypeError):
+        return default
 
-def save_client(client_record):
-    # 1. Load the existing file
+def save_client(record_to_save):
+    # Ensure client_id exists (critical for new records)
+    if 'client_id' not in record_to_save or not record_to_save['client_id']:
+        record_to_save['client_id'] = f"{record_to_save.get('client_name', 'New')}_{record_to_save.get('phone_last4', '0000')}"
+
+    # Load existing
     if os.path.exists(DATA_PATH):
         df = pd.read_csv(DATA_PATH)
     else:
-        # If no file, start with an empty dataframe
-        df = pd.DataFrame()
+        df = pd.DataFrame(columns=['client_id', 'client_name', 'phone_last4', 'current_property', 'dream_property'])
 
-    # 2. Check if the record already exists and remove the OLD version
-    # This prevents duplicates and overwrites
-    if 'client_id' in df.columns:
-        # Keep only the rows where the ID is NOT the one we are updating
-        df = df[df['client_id'] != client_record['client_id']]
+    # Remove old version if it exists to avoid duplicates
+    df = df[df['client_id'] != record_to_save['client_id']]
     
-    # 3. Create a DataFrame for the new/updated record
-    new_record_df = pd.DataFrame([client_record])
+    # Prepare new row
+    new_record = record_to_save.copy()
+    # Serialize JSON fields
+    import json
+    for col in ['current_property', 'dream_property']:
+        if col in new_record and isinstance(new_record[col], dict):
+            new_record[col] = json.dumps(new_record[col])
+            
+    # Add to dataframe
+    df = pd.concat([df, pd.DataFrame([new_record])], ignore_index=True)
+    df.to_csv(DATA_PATH, index=False)
+    return True, "Saved successfully"
+
+def load_clients():
+    """Loads clients and deserializes JSON strings back into dictionaries."""
+    if not os.path.exists(DATA_PATH):
+        return pd.DataFrame()
     
-    # 4. Combine the old data (minus the old version) with the new version
-    final_df = pd.concat([df, new_record_df], ignore_index=True)
+    df = pd.read_csv(DATA_PATH)
     
-    # 5. Save the combined data back to the file
-    final_df.to_csv(DATA_PATH, index=False)
-    
-    return True, "Client saved successfully."
+    # 1. Deserialize district string back to list
+    if 'district' in df.columns:
+        df['district'] = df['district'].apply(
+            lambda x: x.split(";") if isinstance(x, str) and ";" in x else ( [x] if pd.notna(x) else [])
+        )
+        
+    # 2. Deserialize JSON strings back into dictionaries
+    for key in ['current_property', 'dream_property']:
+        if key in df.columns:
+            df[key] = df[key].apply(
+                lambda x: json.loads(x) if isinstance(x, str) else {}
+            )
+            
+    return df
 
 def update_client_qualification(client_id, qualification_data, inputs):
+    """Updates qualification fields for a specific client."""
     df = load_clients()
     
-    # 1. Update Input Fields (including new Bank/CPF fields)
-    df.loc[df['client_id'] == client_id, 'monthly_income'] = float(inputs['income'])
-    df.loc[df['client_id'] == client_id, 'monthly_debt'] = float(inputs['debt'])
-    df.loc[df['client_id'] == client_id, 'assets_cash'] = float(inputs['cash'])
-    df.loc[df['client_id'] == client_id, 'cpf_available'] = float(inputs['cpf'])
+    # Update logic...
+    mask = df['client_id'] == client_id
+    df.loc[mask, 'monthly_income'] = float(inputs.get('income', 0))
+    df.loc[mask, 'qualified_loan_amount'] = float(qualification_data.get('max_loan_eligible', 0))
+    df.loc[mask, 'affordability_status'] = 'Qualified' if qualification_data.get('is_affordable') else 'Shortfall'
     
-    # NEW FIELDS
-    df.loc[df['client_id'] == client_id, 'loan_amount'] = float(inputs['loan_amt'])
-    df.loc[df['client_id'] == client_id, 'cpf_accrued_return'] = float(inputs['cpf_accrued'])
-    
-    # 2. Update Result Fields
-    df.loc[df['client_id'] == client_id, 'qualified_loan_amount'] = float(qualification_data['max_loan_eligible'])
-    df.loc[df['client_id'] == client_id, 'affordability_status'] = 'Qualified' if qualification_data['is_affordable'] else 'Shortfall'
-    
+    # Re-serialize before saving
+    for key in ['current_property', 'dream_property']:
+        if key in df.columns:
+            df[key] = df[key].apply(lambda x: json.dumps(x) if isinstance(x, dict) else x)
+            
     df.to_csv(DATA_PATH, index=False)
     return True, "Client profile updated successfully!"
 
 def delete_client(client_id):
-    df = load_clients()
-    # Filter out the row with the matching ID
-    df = df[df['client_id'] != client_id]
-    df.to_csv(DATA_PATH, index=False)
-    return True, "Client deleted successfully!"
+    if os.path.exists(DATA_PATH):
+        df = pd.read_csv(DATA_PATH)
+        if 'client_id' in df.columns:
+            df = df[df['client_id'] != client_id]
+            df.to_csv(DATA_PATH, index=False)
+            return True
+    return False
